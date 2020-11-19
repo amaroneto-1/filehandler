@@ -1,0 +1,101 @@
+2020-11-19 10:06:17.299  INFO 15842 --- [restartedMain] b.c.a.t.TypeprocessorApplication         : Starting TypeprocessorApplication using Java 11.0.2 on iMac-de-Amaro.local with PID 15842 (/Users/amaro/Downloads/new project/typeprocessor/out/production/classes started by amaro in /Users/amaro/Downloads/new project/typeprocessor)
+2020-11-19 10:06:17.303  INFO 15842 --- [restartedMain] b.c.a.t.TypeprocessorApplication         : No active profile set, falling back to default profiles: default
+2020-11-19 10:06:17.356  INFO 15842 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-19 10:06:18.220  INFO 15842 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-19 10:06:18.308  INFO 15842 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-type_processor_group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = type_processor_group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-11-19 10:06:18.382  INFO 15842 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2020-11-19 10:06:18.383  INFO 15842 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2020-11-19 10:06:18.383  INFO 15842 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1605787578380
+2020-11-19 10:06:18.386  INFO 15842 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-type_processor_group-1, groupId=type_processor_group] Subscribed to topic(s): file_topic
+2020-11-19 10:06:18.394  INFO 15842 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-11-19 10:06:18.412  INFO 15842 --- [restartedMain] b.c.a.t.TypeprocessorApplication         : Started TypeprocessorApplication in 1.542 seconds (JVM running for 7.42)
+2020-11-19 10:06:18.679  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-type_processor_group-1, groupId=type_processor_group] Cluster ID: r6nrg2wDSs671HNdFTZnQA
+2020-11-19 10:06:18.681  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-type_processor_group-1, groupId=type_processor_group] Discovered group coordinator 192.168.100.35:9092 (id: 2147483647 rack: null)
+2020-11-19 10:06:18.684  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-type_processor_group-1, groupId=type_processor_group] (Re-)joining group
+2020-11-19 10:06:18.703  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-type_processor_group-1, groupId=type_processor_group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2020-11-19 10:06:18.703  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-type_processor_group-1, groupId=type_processor_group] (Re-)joining group
+2020-11-19 10:06:18.708  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-type_processor_group-1, groupId=type_processor_group] Finished assignment for group at generation 63: {consumer-type_processor_group-1-f4c56e93-ba11-4b10-b737-f2115075ab9c=Assignment(partitions=[file_topic-0])}
+2020-11-19 10:06:18.714  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-type_processor_group-1, groupId=type_processor_group] Successfully joined group with generation 63
+2020-11-19 10:06:18.715  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-type_processor_group-1, groupId=type_processor_group] Notifying assignor about the new Assignment(partitions=[file_topic-0])
+2020-11-19 10:06:18.718  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-type_processor_group-1, groupId=type_processor_group] Adding newly assigned partitions: file_topic-0
+2020-11-19 10:06:18.731  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-type_processor_group-1, groupId=type_processor_group] Setting offset for partition file_topic-0 to the committed offset FetchPosition{offset=513, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.100.35:9092 (id: 0 rack: null)], epoch=0}}
+2020-11-19 10:06:18.732  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : type_processor_group: partitions assigned: [file_topic-0]
+2020-11-19 10:06:27.741  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-type_processor_group-1, groupId=type_processor_group] Revoke previously assigned partitions file_topic-0
+2020-11-19 10:06:27.741  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : type_processor_group: partitions revoked: [file_topic-0]
+2020-11-19 10:06:27.742  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-type_processor_group-1, groupId=type_processor_group] Member consumer-type_processor_group-1-f4c56e93-ba11-4b10-b737-f2115075ab9c sending LeaveGroup request to coordinator 192.168.100.35:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-11-19 10:06:27.755  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-type_processor_group-1, groupId=type_processor_group] Unsubscribed all topics or patterns and assigned partitions
+2020-11-19 10:06:27.756  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-11-19 10:06:27.767  INFO 15842 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : type_processor_group: Consumer stopped
