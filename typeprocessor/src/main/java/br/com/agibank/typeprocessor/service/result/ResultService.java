@@ -15,7 +15,6 @@ public abstract class ResultService<T> {
     public abstract List<ResultadoDTO> getResult();
 
     public ResultService() {
-        System.out.println("INSTANCED RESULT SERVICE...");
         this.key = "";
         this.elementSet = new HashSet<>();
     }

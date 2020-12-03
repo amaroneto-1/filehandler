@@ -16,8 +16,9 @@ public abstract class Factory<T extends Entity> {
         Pattern pattern = Pattern.compile(patternStr);
         Matcher matcher = pattern.matcher(line);
 
-        /*if(!matcher.matches());
-            throw new InstanceException(Constants.ERROR.ROW_INVALID_FORMAT_REGEX);*/
+        System.out.println("matches:"+matcher.matches());
+        if(!matcher.matches())
+            throw new InstanceException(Constants.ERROR.ROW_INVALID_FORMAT_REGEX);
     }
 
 }

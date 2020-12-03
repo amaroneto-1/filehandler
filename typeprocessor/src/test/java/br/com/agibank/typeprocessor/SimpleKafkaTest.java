@@ -1,5 +1,6 @@
 package br.com.agibank.typeprocessor;
 
+import br.com.agibank.typeprocessor.config.KafkaConstants;
 import br.com.agibank.typeprocessor.util.Constants;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -45,7 +46,7 @@ class SimpleKafkaTest {
     void testarConexaoEAssignmentPartitions() throws Exception{
         Map<String, Object> configs = new HashMap<>(KafkaTestUtils.consumerProps("test_consumer", "false", embeddedKafkaBroker));
         DefaultKafkaConsumerFactory<String, String> consumerFactory = new DefaultKafkaConsumerFactory<>(configs, new StringDeserializer(), new StringDeserializer());
-        ContainerProperties containerProperties = new ContainerProperties(Constants.KAFKA.FILE_TOPIC);
+        ContainerProperties containerProperties = new ContainerProperties(KafkaConstants.FILE_TOPIC);
         container = new KafkaMessageListenerContainer<>(consumerFactory, containerProperties);
         records = new LinkedBlockingQueue<>();
         container.setupMessageListener((MessageListener<String, String>) records::add);

@@ -1,5 +1,8 @@
 package br.com.agibank.typeprocessor.service;
 
+import br.com.agibank.typeprocessor.config.KafkaConstants;
+import br.com.agibank.typeprocessor.dto.ErrorDTO;
+import br.com.agibank.typeprocessor.util.UtilService;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
