@@ -8,19 +8,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ClientFactory extends Factory<Cliente> {
-
     @Override
-    public void verify(String line, String[] data) throws InstanceException {
-        if(data.length < 4)
-            throw new InstanceException(Constants.ERROR.ROW_INVALID_FORMAT);
-
-        this.verify(line, EntityTypeEnum.CLIENTE.getPattern());
-    }
-
-    @Override
-    public Cliente getInstance(String line) throws InstanceException{
-        String[] data = line.split("ç");
-        this.verify(line, data);
+    public Cliente getInstance(String line) throws InstanceException {
+        String[] data = this.verifyAndGetDataArray(line, "ç", 4, EntityTypeEnum.CLIENTE);
         return new Cliente(data);
     }
 }
